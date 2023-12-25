@@ -1,0 +1,23 @@
+# https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html
+export XDG_CACHE_HOME="${XDG_CACHE_HOME:=$HOME/.cache}"
+export XDG_CONFIG_HOME="${XDG_CONFIG_HOME:=$HOME/.config}"
+export XDG_DATA_HOME="${XDG_DATA_HOME:=$HOME/.local/share}"
+export XDG_STATE_HOME="${XDG_STATE_HOME:=$HOME/.local/state}"
+# Not officially in the specification
+export XDG_BIN_HOME="${XDG_BIN_HOME:=$HOME/.local/bin}"
+
+# PATH
+export PATH=$PATH:$XDG_BIN_HOME
+
+# Config path
+export MY_CONFIG_SH=$XDG_CONFIG_HOME/mysh
+
+# Mainly for git commit color.
+export EDITOR=vim
+
+# Jetbrains IDE
+export IDEA_PROPERTIES=~/idea.properties
+export PHPSTORM_PROPERTIES=~/phpstorm.properties
+export CLION_PROPERTIES=~/clion.properties
+# https://stackoverflow.com/questions/28777414/how-to-get-android-studio-1-1-0-to-not-use-default-folders-and-pay-attention-to
+export STUDIO_PROPERTIES=~/studio.properties

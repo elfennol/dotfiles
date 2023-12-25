@@ -1,0 +1,4 @@
+# Dash compatible
+
+# Executed by bash when login shell exits.
+. "$MY_CONFIG_SH"/logout.sh

@@ -1,0 +1,5 @@
+Host example.fr
+  Port 1234
+  User my_user
+  IdentitiesOnly yes
+  IdentityFile ~/.ssh/my_key_rsa

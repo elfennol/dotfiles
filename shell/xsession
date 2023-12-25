@@ -1,0 +1,4 @@
+# Dash compatible
+
+# http://mywiki.wooledge.org/DotFiles
+[ -r ~/.profile ] && . ~/.profile

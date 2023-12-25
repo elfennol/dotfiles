@@ -1,0 +1,95 @@
+" No compatible with Vi
+set nocompatible
+
+" Name of the terminal
+" help term-dependent-settings
+if &term == "screen.xterm"
+	set term=xterm
+endif
+
+"Sets the character encoding used inside Vim
+set encoding=UTF-8
+
+" place the swap file in ~/.vim/swap-file
+set dir=~/.vim/swap-file
+
+" matchparen
+let loaded_matchparen = 1
+
+" how many entries may be stored in the history
+set history=100
+
+" show the cursor position all the time
+set ruler
+
+" syntax highlighting
+syntax on
+
+" do incremental searching
+set incsearch
+
+" highlighting the last used search pattern
+set hlsearch
+
+" autoindenting on
+set autoindent
+
+" make no backup before overwriting a file
+set nobackup
+
+" allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+
+" Load color scheme
+colorscheme default
+
+" use colors that look good on a dark background
+set background=dark
+
+" strings to use in 'list' mode
+set lcs=tab:I-,trail:=,eol:$,extends:@,nbsp:\|
+
+" display unprintable characters
+set list
+
+" precede each line with its line number
+set number
+
+" this gives the <EOL> of the current buffer, which is
+" used for reading/writing the buffer from/to a file
+set fileformat=unix
+
+" display incomplete commands
+set showcmd
+
+" Set status line
+set laststatus=2
+if has("statusline")
+	set statusline=%<%f\ %h%m%r%=%{\"[\".(&fenc==\"\"?&enc:&fenc).\"\ \".(&fileformat).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}%k\ %-14.(%l,%c%V%)\ %P
+ endif
+
+" Spell checking
+autocmd FileType tex,mail,txt setlocal spell spelllang=en_us
+
+" Enable file type detection
+filetype plugin on
+filetype indent on
+
+" last-position-jump
+au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
+
+" keywords
+set iskeyword+=:
+set iskeyword+=_
+set iskeyword+=-
+
+" remap j and k to scroll by visual lines
+imap <up> <C-O>gk
+imap <down> <C-O>gj
+nmap <up> gk
+nmap <down> gj
+vmap <up> gk
+vmap <down> gj
+
+" no modeline
+set nomodeline
