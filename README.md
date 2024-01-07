@@ -33,7 +33,7 @@ $XDG_BIN_HOME/window_term.sh # ~/.local/bin/window_term.sh
 ## shell
 
 ```
-$MY_CONFIG_SH # $XDG_CONFIG_HOME/mysh
+# MY_CONFIG_SH=$XDG_CONFIG_HOME/myconf/shell/mysh
 ~/.bash_logout
 ~/.bash_profile
 ~/.bashrc

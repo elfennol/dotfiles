@@ -10,7 +10,7 @@ export XDG_BIN_HOME="${XDG_BIN_HOME:=$HOME/.local/bin}"
 export PATH=$PATH:$XDG_BIN_HOME
 
 # Config path
-export MY_CONFIG_SH=$XDG_CONFIG_HOME/mysh
+export MY_CONFIG_SH=$XDG_CONFIG_HOME/myconf/shell/mysh
 
 # Mainly for git commit color.
 export EDITOR=vim
