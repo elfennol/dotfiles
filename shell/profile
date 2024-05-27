@@ -21,3 +21,9 @@ export PHPSTORM_PROPERTIES=~/phpstorm.properties
 export CLION_PROPERTIES=~/clion.properties
 # https://stackoverflow.com/questions/28777414/how-to-get-android-studio-1-1-0-to-not-use-default-folders-and-pay-attention-to
 export STUDIO_PROPERTIES=~/studio.properties
+
+# Start applications with nvidia
+# Taken from /usr/bin/prime-run
+export __NV_PRIME_RENDER_OFFLOAD=1
+export __VK_LAYER_NV_optimus=NVIDIA_only
+export __GLX_VENDOR_LIBRARY_NAME=nvidia
