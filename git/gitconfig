@@ -4,15 +4,20 @@
 [core]
     excludesfile = ~/.gitignore
 [alias]
-    st = status
-    ci = commit
-    ca = commit --amend
-    co = checkout
-    d = diff
-    dc = diff --cached
-    l = log --format=fuller
-    lp = log -p
-    ls = log --stat --format=fuller
-    fp = push --force-with-lease
+    st  = status
+    ci  = commit
+    ca  = commit --amend
+    co  = checkout
+    d   = diff
+    dw  = diff --word-diff
+    dc  = diff --cached
+    dcw = diff --cached --word-diff
+    l   = log
+    lf  = log --pretty=fuller
+    lp  = log -p
+    ls  = log --stat
+    ln  = log -1 --stat
+    ol  = log --oneline
+    pf  = push --force-with-lease
 [init]
     defaultBranch = main
