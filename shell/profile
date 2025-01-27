@@ -19,6 +19,9 @@ export EDITOR=vim
 export IDEA_PROPERTIES=~/idea.properties
 export PHPSTORM_PROPERTIES=~/phpstorm.properties
 export CLION_PROPERTIES=~/clion.properties
+export GOLAND_PROPERTIES=~/goland.properties
+export PYCHARM_PROPERTIES=~/pycharm.properties
+export RUSTROVER_PROPERTIES=~/rustrover.properties
 # https://stackoverflow.com/questions/28777414/how-to-get-android-studio-1-1-0-to-not-use-default-folders-and-pay-attention-to
 export STUDIO_PROPERTIES=~/studio.properties
 
