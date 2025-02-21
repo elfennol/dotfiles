@@ -1,0 +1,19 @@
+# Requires SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket" to be set in environment
+# https://wiki.archlinux.org/title/Systemd/User:
+#   All the user units will be placed in ~/.config/systemd/user/.
+#   If you want to start units on first login,
+#   execute systemctl --user enable unit for any unit you want to be autostarted.
+
+[Unit]
+ConditionEnvironment=!SSH_AGENT_PID
+Description=OpenSSH key agent
+Documentation=man:ssh-agent(1) man:ssh-add(1) man:ssh(1)
+
+[Service]
+Environment=SSH_AUTH_SOCK=%t/ssh-agent.socket
+ExecStart=/usr/bin/ssh-agent -D -a ${SSH_AUTH_SOCK}
+SuccessExitStatus=2
+Type=simple
+
+[Install]
+WantedBy=default.target

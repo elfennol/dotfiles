@@ -1,3 +1,6 @@
+# SSH
+SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+
 # https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html
 export XDG_CACHE_HOME="${XDG_CACHE_HOME:=$HOME/.cache}"
 export XDG_CONFIG_HOME="${XDG_CONFIG_HOME:=$HOME/.config}"
@@ -27,6 +30,6 @@ export STUDIO_PROPERTIES=~/studio.properties
 
 # Start applications with nvidia
 # Taken from /usr/bin/prime-run
-export __NV_PRIME_RENDER_OFFLOAD=1
-export __VK_LAYER_NV_optimus=NVIDIA_only
-export __GLX_VENDOR_LIBRARY_NAME=nvidia
+#export __NV_PRIME_RENDER_OFFLOAD=1
+#export __VK_LAYER_NV_optimus=NVIDIA_only
+#export __GLX_VENDOR_LIBRARY_NAME=nvidia
