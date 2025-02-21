@@ -37,7 +37,6 @@ $XDG_BIN_HOME/window_term.sh # ~/.local/bin/window_term.sh
 ~/.bash_logout
 ~/.bash_profile
 ~/.bashrc
-~/.pam_environment
 ~/.profile
 ~/.xsession
 ```
@@ -49,6 +48,14 @@ Fill the template.
 ```
 ~/.ssh/config
 ```
+
+User unit for ssh agent:
+
+```
+~/.ssh/ssh-agent.service
+```
+
+See https://wiki.archlinux.org/title/Systemd/User.
 
 ## vim
 
