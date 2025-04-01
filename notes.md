@@ -5,6 +5,15 @@
 - `/etc/systemd/journald.conf`:
   - `SystemMaxUse=50M`
 
+## fstab
+
+```
+# /etc/fstab
+# ramfs: better than tmpfs (no swap) for temporary sensitive data.
+# sudo mkdir /mnt/ramfs
+none    /mnt/ramfs    ramfs    noauto,user,mode=1777    0    0
+```
+
 ## KDE settings
 
 ### File Search
