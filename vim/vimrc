@@ -91,5 +91,8 @@ nmap <down> gj
 vmap <up> gk
 vmap <down> gj
 
+" Markdown
+let g:markdown_fenced_languages = ['json']
+
 " no modeline
 set nomodeline
